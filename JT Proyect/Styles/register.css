@@ -1,3 +1,158 @@
+/* Reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
 body{
-    background: chocolate;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8efef;
+}
+
+/* Form Container */
+.form-container {
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    overflow:hidden;
+    position: relative;
+}
+
+/*login & Signup Container */
+.login_container,
+.signup-container{
+    width:50px;
+    padding: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    transition: all 500ms ease;
+}
+
+.signup.container{
+    transform: scale(0);
+}
+
+/* Title */
+.title{
+    font-size: 20px;
+    font-weight: 500;;
+}
+
+/* Description */
+.description{
+    font-size: 12px;
+}
+
+/* Input container */
+.input-container{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #d6e0eb;
+    display: flex;
+    align-items: center;
+}
+
+/* Input */
+input {
+    height: 100%;
+    border: none;
+    margin-left: 5px;
+    outline: none;
+    width: 100%;
+    padding: 0 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Account Controls */
+.account-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Account Control Links */
+.account-controls > a {
+    text-decoration: none;
+    color: #5293aa;
+    font-size: 12px;
+}
+
+/* Account Control Button */
+.account-controls > button {
+    width: 65px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    background: #0465;
+    color: #FFF;
+    cursor: pointer;
+    transition: transform 500ms ease;
+    box-shadow: 0 3px 10px -5px #73aabb;
+}
+
+.account-controls > button:hover{
+    transform: scale(1.1);
+}
+
+/* Line Separaton */
+.line{
+    width: 100%;
+    height:2px;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+/* Placeholder Banner */
+.placeholeder-banner{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: all 500ms ease;
+    z-index: 4;
+}
+
+/*Singup Text */
+.signup-text{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/*Toggler Links*/
+#signup-form-toggler,
+#login-form-toggler {
+    cursor: pointer;
+    text-decoration: none;
+    color: #046586;
+}
+
+#signup-form-toggler:hover,
+#login-form-toggler:hover{
+    border-bottom: 1px solid;
+}
+
+/*Banner Image */
+.banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: tranform 500ms ease;
 }
