@@ -2,11 +2,12 @@ body{
     background-color: #000;
     margin:0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1, h2, h3{
-    color: white;
-    font-size: 30px;
+    color: #ed1c24;
+    font-size: 35px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -15,12 +16,15 @@ a{
 }
 
 .header{
+    position: fixed;
+    top: 0;
     background: #000;
     display: flex;
+    z-index: 10;
 }
 
 .navbar{
-    width: 100%;
+    width: 100vw;
     height: 20%;
     display: flex;
     background-color: #000;
@@ -46,7 +50,7 @@ a{
         background-color:#000;
         width: 100%;
         height: 100%;
-        margin-left: 50%;
+        margin-left: 25%;
     }
 }
 
@@ -63,6 +67,7 @@ nav a{
     z-index: 1;
     display: inline-block;
     text-align: center;
+    text-transform: uppercase;
 }
 nav .animation{
     position: absolute;
@@ -108,8 +113,8 @@ nav .start-about,a:nth-child(4):hover~.animation{
 /*contenedor de saludo*/
 .saludo{
     width: 100vw;
-    height: 50vh;
-    margin:50px 10px 0 10px;
+    height: 70vh;
+    margin:150px 10px 0 10px;
     background-color:#000;
     display: flex;
     flex-direction: row;
@@ -138,41 +143,62 @@ nav .start-about,a:nth-child(4):hover~.animation{
     background-color: #000;
 
     p{
-        text-align: center;
+        text-align: left;
         align-content: center;
         font-size: 25px;
+        padding: 0;
         display: block;
-        padding: 50px;
         color:#FFF;
         font-style: italic;
+    }
+
+    #JT_name{
+        font-size: 50px;
+        color: #ED1C24;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #pasion{
+        font-size: 20px;
+    }
+    #JT_Strong{
+        font-size: 40px;
+        margin-left: 25%;
     }
 }
 
 /*contenedor de planes y precios*/
 .planes{
     width: 100vw;
-    height: 50vh;
-    margin:10px;
+    height: 70vh;
+    padding:20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color:#000;
     flex-direction: row;
     text-align: center;
+    background-image: url(./img/fondo_gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .precios{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding:90px;
     gap:100px;
 }
 
 .card1, .card2, .card3{
-    width: 190px;
-    height: 250px;
+    position: reltive;
+    width: 230px;
+    height: 300px;
     border-radius: 3px;
     background: #84774d;
+    background-image: linear-gradient(335deg, #84774d 72%, #ced4da 98%, #FFF 100%);
     padding: 5px;
-    box-shadow: -5px 5px 20px 0.2px #84774d;
 
     img{
         width: 50%;
@@ -180,6 +206,7 @@ nav .start-about,a:nth-child(4):hover~.animation{
         border-radius: 30%;
     }
 }
+
 
 #nombre_plan{
     color: #000;
@@ -196,6 +223,36 @@ nav .start-about,a:nth-child(4):hover~.animation{
 }
 
 /*certificados*/
+
+/*Servicio*/
+.beneficios{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px 35px;
+
+    p{
+        color: #FFF;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: bold;
+        text-transform: uppercase;
+    }
+}
+
+.b1, .b2, .b3, .b4{
+    padding: 5px;
+    align-content: center;
+    margin: 0 auto;
+    width: 230px;
+    height: 300px;
+
+    img{
+        margin:0 25%;
+    }
+}
 
 /*testimonios*/
 
