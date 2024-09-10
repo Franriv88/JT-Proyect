@@ -3,11 +3,12 @@ body{
     margin:0;
     padding: 0;
     overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1, h2, h3{
     color: #ed1c24;
-    font-size: 35px;
+    /* font-size: 35px; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -267,48 +268,121 @@ nav .start-about,a:nth-child(4):hover~.animation{
 }
 
 /*MERCANCÍA*/
-.slider-frame{
-    width: 640px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-    background-color: #fff;
-
-    animation:slide 16s infinite alternate ease-in-out;
+.merch{
+    padding:30px;
+    background-color: grey;
 }
 
-.slider-frame ul{
+.swiper-grapper{
     display: flex;
-    padding: 0;
-    width: 400%;
 }
 
-.slider-frame il{
-    list-style: none;
+.swiper{
+    width:100%;
+    padding:150px 0 50px 0;
+}
+
+.swiper-slide{
+    width:300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding:40px;
+    text-align:center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.icons i{
+    font-size:20px;
+    color: #ffb900;
+}
+
+.icons img{
+    width: 50px;
+}
+
+.product-content{
+    /* display:flex; */
+    justify-content:sapce-betweeen;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.product-txt span{
+    font-size: 25px;
+    color: #ffb900;
+    font-weight: bold;
+}
+
+.product.txt h3{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.product-txt p{
+    font-size: 14px;
+    color: #C4C4C4;
+    text-align: left;
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.product-img img{
+    width:170px;
+
+}
+
+.product-img p{
+    font-size: 14px;
+    color: #C4C4C4;
+    text-align: left;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #FFB900;
+    border-radius: 25px;
+    color: #FFB900;
+    margin-top: 20px;
+}
+
+/* testimonios */
+.footer {
     width: 100%;
-
+    background: #84774d;
+    display: flex;
+    text-align: right;
 }
 
-.slider-frame img{
-    width: 100%;   
+.footer li {
+    list-style: none;
+    display: inline-block;
 }
 
-@keyframes slide{
-    0%{margin-left: 0%}
-    20%{margin-left: 0%}
-
-    25%{margin-left: -100%}
-    45%{margin-left: -100%}
-
-    50%{margin-left: -200%}
-    70%{margin-left: -200%}
-
-    75%{margin-left: -300%}
-    95%{margin-left: -300%}
-
+.footer li a {
+    color: #000;
+    font-size: 15px;
+    margin-right: 50px;
 }
+
 /*testimonios*/
-
+.testimonios{
+    padding: 30px;
+}
 .footer{
     width: 100%;
     background: #84774d;
