@@ -207,9 +207,6 @@ nav .start-about,a:nth-child(4):hover~.animation{
         border-radius: 30%;
     }
 
-    p{
-
-    }
 }
 
 
@@ -270,7 +267,7 @@ nav .start-about,a:nth-child(4):hover~.animation{
 /*MERCANCÍA*/
 .merch{
     padding:30px;
-    background-color: grey;
+    background-color: #000;
 }
 
 .swiper-grapper{
