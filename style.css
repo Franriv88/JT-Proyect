@@ -1,0 +1,442 @@
+body{
+    background-color: #000;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3{
+    color: #ed1c24;
+    /* font-size: 35px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    background: #000;
+    display: flex;
+    z-index: 10;
+}
+
+.navbar{
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    background-color: #000;
+    box-shadow: 0 2px 30px 0 #84774d;
+}
+
+.navdiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin:0 20px;
+    justify-content: space-between;
+    background-color: #000;
+
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    nav{
+        position: relative;
+        background-color:#000;
+        width: 100%;
+        height: 100%;
+        margin-left: 25%;
+    }
+}
+
+nav a{
+    color: #FFF;
+    width: 146px;
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 23px;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #84774d;
+    width: 100px;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+
+}
+a:nthchild(1){
+    width: 100px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+    width: 192px;
+    left: 0;
+}
+a:nthchild(2){
+    width: 100%;
+    left: 0;
+}
+nav .start-planes,a:nth-child(2):hover~.animation{
+    width: 192px;
+    left: 192px;
+}
+a:nthchild(3){
+    width: 100px;
+}
+nav .start-merchandising,a:nth-child(3):hover~.animation{
+    width: 192px;
+    left: 384px;
+}
+a:nthchild(4){
+    width: 100px;
+}
+nav .start-about,a:nth-child(4):hover~.animation{
+    width: 192px;
+    left: 576px;
+}
+
+/*contenedor de saludo*/
+.saludo{
+    width: 100vw;
+    height: 70vh;
+    margin:150px 10px;
+    background-color:#000;
+    display: flex;
+    flex-direction: row;
+}
+
+.img_saludo{
+    width: 50vw;
+    height: 100%;
+    padding: 10px;
+    background-color: #000;
+}
+
+#JT_perfil{
+    width: 35vw;
+    height: 60vh;
+    margin-left: 10%;
+    mask-image: linear-gradient(black 80%,transparent);
+}
+
+.texto_saludo{
+    width: 50vw;
+    height: 100%;
+    padding: 10px;
+    margin:0 50px;
+    font-family: roboto;
+    background-color: #000;
+
+    p{
+        text-align: left;
+        align-content: center;
+        font-size: 25px;
+        padding: 0;
+        display: block;
+        color:#FFF;
+        font-style: italic;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+    }
+
+    #JT_name{
+        font-size: 50px;
+        color: #ED1C24;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #pasion{
+        font-size: 20px;
+    }
+    #JT_Strong{
+        font-size: 40px;
+        margin-left: 25%;
+    }
+}
+
+.redes{
+    background-color: #000;
+}
+
+.redes img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+/*contenedor de planes y precios*/
+.planes{
+    width: 100vw;
+    height: 90vh;
+    padding:20px;
+    margin: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#000;
+    flex-direction: row;
+    text-align: center;
+    background-image: url(./img/fondo_gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.planes h3{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+#planOnline{
+    color: #FFF;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:90px;
+    gap:100px;
+}
+
+.card1, .card2, .card3{
+    position: reltive;
+    width: 230px;
+    height: 300px;
+    border-radius: 3px;
+    background: #84774d;
+    background-image: linear-gradient(335deg, #84774d 72%, #ced4da 98%, #FFF 100%);
+    padding: 5px;
+
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 30%;
+    }
+
+}
+
+
+.nombre_plan{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.valor{
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+        1.5px 1.5px 0 #3e3822,
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #3e3822,
+        -1px 1px 0 #ffffff,
+          1px 1px 0 #ffffff;
+}
+
+
+/*certificados*/
+
+/*Servicio*/
+.beneficios{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px 35px;
+
+    p{
+        color: #FFF;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: bold;
+        text-transform: uppercase;
+    }
+}
+
+.b1, .b2, .b3, .b4{
+    padding: 5px;
+    align-content: center;
+    margin: 0 auto;
+    width: 230px;
+    height: 300px;
+
+    img{
+        margin:0 25%;
+    }
+}
+
+/*MERCANCÍA*/
+.merch{
+    padding:30px;
+    background-color: #000;
+
+    p{
+        color: #FFFFFF;
+        font-weight: bold;
+        text-align: left;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: bold;
+        text-transform: uppercase;
+    }
+}
+
+.swiper-grapper{
+    display: flex;
+}
+
+.swiper{
+    width:100%;
+    padding:150px 0 50px 0;
+}
+
+.swiper-slide{
+    width:300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding:40px;
+    text-align:center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.icons i{
+    font-size:20px;
+    color: #ffb900;
+}
+
+.icons img{
+    width: 50px;
+}
+
+.product-content{
+    /* display:flex; */
+    justify-content:sapce-betweeen;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.product-txt span{
+    font-size: 25px;
+    color: #ffb900;
+    font-weight: bold;
+}
+
+.product.txt h3{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.product-txt p{
+    font-size: 14px;
+    color: #C4C4C4;
+    text-align: left;
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.product-img img{
+    width:170px;
+
+}
+
+.product-img p{
+    font-size: 14px;
+    color: #C4C4C4;
+    text-align: left;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #FFB900;
+    border-radius: 25px;
+    color: #FFB900;
+    margin-top: 20px;
+}
+
+.tiendaOnline{
+
+    display: inline-block;
+    margin-left: 75%;
+    text-align: center;
+}
+/* testimonios */
+.footer {
+    width: 100%;
+    background: #84774d;
+    display: flex;
+    text-align: right;
+}
+
+.footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer li a {
+    color: #000;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+/*testimonios*/
+.testimonios{
+    padding: 30px;
+}
+.footer{
+    width: 100%;
+    background: #84774d;
+    display: flex;
+    text-align: right;
+
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        color: #000;
+        font-size: 15px;
+        margin-right: 50px;
+    }
+}
