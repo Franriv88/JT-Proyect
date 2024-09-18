@@ -20,8 +20,8 @@
                 <nav>
                     <a href="#saludoSection">Home</a>
                     <a href="#planesSection">Planes</a>
+                    <a href="#asesoriaSection">Asesoría</a>
                     <a href="#merchSection">Merchandising</a>
-                    <a href="#redesSection">About</a>
                     <div class="animation start-home"></div>
                 </nav>
             </div>
@@ -30,11 +30,11 @@
     <!-- <h1>logo de JT</h1> -->
         <div class="saludo" id="saludoSection">
             <div class="img_saludo">
-                <img id="JT_perfil"src="./img/Joaco picutre -sin fondo.png" alt="">
+                <img id="JT_perfil"src="./img/joacoPerfil.png" alt="">
             </div>
             <div class="texto_saludo">
                 <p>Hola, soy <span id="JT_name">Joaquín Taboada</span></p>
-                <p>Entrenador personal</p>
+                <p id="entrenador">Entrenador personal</p>
                 <p> <span id="pasion">"Mi profesión y pasión es ayudar hombres y mujeres comprometidos a transformar su calidad de vida y físico."</span></p><br>
                 <div class="redes">
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=91139260142&text=Hola JT!"><img src="./img/socialIcons/whatsapp-red.png" alt="Whatsapp"></a>
@@ -48,7 +48,6 @@
         <!-- PLANES (tarjetas) -->
     <div class="planes" id="planesSection">
             <h3>¡Planes disponibles para vos!</h3>
-            <p id="planOnline">Preguntá también por nuestros planes de entrenamiento Online...</p>
         <div class="precios">
             <div class="card1 front">
                 <p><span class="nombre_plan">Plan de 3 días/semana</span><br>(Abono mensual)</p>
@@ -66,6 +65,7 @@
                 <img src="./img/JT_logo_red_64x64-removebg-preview.png" alt="">
             </div>
         </div>
+        <p id="planOnline">Preguntá también por nuestros planes de entrenamiento Online...</p>
     </div>
         <!-- servicios -->
         <div class="beneficios">
@@ -86,14 +86,26 @@
             <img src="./img/equipo 128px.png" alt="">
             </div>
         </div>
-        <!-- CERTIFICADOS Y ESTUDIOS -->
-        <!-- <div class="certificados" id="certificadosSection">
-            <h3>certificados</h3>
-        </div> -->
+
+    <div class="formulario" id="asesoriaSection">
+            <h3>Asesoría es 100% personalizada!</h3>
+        <div class="imgbutton">
+            <div class="training" id="img-left">
+                <img src="./img/training (2).png" alt="">
+            </div>
+            <div class="formularioButton">
+                <p>Completá el siguiente formulario y contáme sobre vos! </p>
+                <a class="formJT" target="_blank" href="https://docs.google.com/forms/d/1rEBgzdkH8ptf-dn6_VEndT5QccsGUQwDeCd_AEmiln4/viewform?ts=66c8d62c&edit_requested=true">Formulario</a>
+            </div>
+            <div class="training" id="img-right">
+                <img src="./img/training2-sinfondo-reverse.png" alt="">
+            </div>
+        </div>
+    </div>
         <!-- MERCANCÍA -->
         <div class="merch" id="merchSection">
-            <h2>ARMADURAS</h2>
-            <p>Indumentaria que hace juego con tu motivación y determinación!</p>
+            <h3>ARMADURAS</h3>
+            <p>¡Hacé juego con tu determinación!</p>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
@@ -203,10 +215,7 @@
                 </div>
             </div>
         </div>
-        <!-- TESTIMONIOS Y COMENTARIOS -->
-        <div class="testimonios" id="testiomoniosSection">
-            <h3>Área de testimonios</h3>
-        </div>
+
         <!-- FOOTER & SOCIAL MEDIA -->
         <footer class="footer" id="redesSection">
             <ul>

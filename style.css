@@ -7,11 +7,14 @@ body{
 }
 
 h1, h2, h3{
-    color: #ed1c24;
+    color: #fff; /*#ed1c24*/
     /* font-size: 35px; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h3{
+    font-size: 30px;
+}
 a{
     text-decoration: none;
 }
@@ -128,8 +131,8 @@ nav .start-about,a:nth-child(4):hover~.animation{
 }
 
 #JT_perfil{
-    width: 35vw;
-    height: 60vh;
+    width: 40vw;
+    height: 65vh;
     margin-left: 10%;
     mask-image: linear-gradient(black 80%,transparent);
 }
@@ -161,6 +164,10 @@ nav .start-about,a:nth-child(4):hover~.animation{
         text-transform: uppercase;
     }
 
+    #entrenador{
+        color: #ed1c24;
+    }
+
     #pasion{
         font-size: 20px;
     }
@@ -183,14 +190,14 @@ nav .start-about,a:nth-child(4):hover~.animation{
 /*contenedor de planes y precios*/
 .planes{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     padding:20px;
     margin: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color:#000;
     flex-direction: row;
     text-align: center;
-    background-image: url(./img/fondo_gym.jpg);
+    background-image: url(./img/remo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -210,6 +217,7 @@ nav .start-about,a:nth-child(4):hover~.animation{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .precios{
@@ -260,8 +268,6 @@ nav .start-about,a:nth-child(4):hover~.animation{
 }
 
 
-/*certificados*/
-
 /*Servicio*/
 .beneficios{
     display: flex;
@@ -292,13 +298,76 @@ nav .start-about,a:nth-child(4):hover~.animation{
     }
 }
 
+.formulario{
+    padding:0 10px;
+    background-color: #000;
+}
+
+.imgbutton{
+    display: flex;
+}
+
+.formularioButton{
+    padding:1%;
+    background-color: #000;
+    display: block;
+
+    a{
+        margin: 5% 30%;
+    }
+}
+
+.formulario p{
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.formJT{
+    background-color: #84774d;
+    border-radius: 8px;
+    padding:10px;
+}
+
+.formulario a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.training {
+    width: 100%;
+    height: 100%;
+    /* Difumina en la parte inferior y en el margen derecho */
+    mask-image: linear-gradient(black 10%, transparent), /* Difuminado hacia abajo */
+                linear-gradient(to right, black 80%, transparent), /* Difuminado hacia la derecha */
+                linear-gradient(to left, black 90%, transparent);
+    mask-composite: intersect;
+}
+
+#img-left{
+    width: 33%;
+    height: 50%;
+}
+
+#img-right{
+    width: 33%;
+    height: 50%;
+}
 /*MERCANCÍA*/
 .merch{
-    padding:30px;
+    padding:0 10px;
     background-color: #000;
 
     p{
-        color: #FFFFFF;
+        color: #FFF;
         font-weight: bold;
         text-align: left;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
